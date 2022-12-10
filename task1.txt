@@ -1,0 +1,143 @@
+//Landing page using HTML,CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetHeart Caffe</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sw<span>ee</span>tH<span>e</span>art Caf<span>e</span></div>
+            <div class="menu">
+                <a href="#">Foods</a>
+                <a href="#">Offer</a>
+                <a href="#">Order</a>
+                <a href="#">Delivery</a>
+                <a href="#">Carts</a>
+            </div>
+        </nav>
+        <div class="he-text">
+            <h2>Invited to taste the coffe ! </h2>
+           <h1>Discover the <span>taste</span> of real <span>Coffe</span>.</h1>
+          <a href="#" id="order">Order Now !!</a>
+           <a href="#" id="offer">20% off Hurry!!</a>
+           <h3>Menu</h3>
+
+        </div>
+        <div id="image">
+            <img src="cofe.jpg" alt="coffe" width="100">
+            <img src="frc.jpg" alt="frenchchicken" width="100">
+            <img src="pizza.jpg" alt="pizza" width="100">
+            <img src="momos.jpg" alt="momos" width="100">
+            <img src="mashroom.jpg" alt="momos" width="100">
+            <img src="gobi.jpg" alt="momos" width="100">
+            <img src="french fries.jpg" alt="momos" width="100">
+        </div>
+        <div class="l">
+            <img src="sw1.jpg" alt="SweetHeart" width="70">
+        </div>
+    </header>
+    <style type="text/css">
+        *{ padding:0; margin:0; box-sizing: border-box;  font-family: sans-serif;
+        }
+        header{
+            width: 100%;
+            height: 100%;
+            background: url(c1.jpg);
+            background-size: 50% 500%;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            position: relative;
+        }
+        nav{
+            width: 100%;
+            height: 70%;
+            padding: 0px 80px;
+            background-color: rgb(123, 209, 209);
+            color: black;
+            display: flex;
+            box-shadow: grey;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+           font-size: 3em;
+           font-weight: bold;
+           letter-spacing: 3px;
+        }
+        .logo span{
+            color: brown;
+        }
+        .menu a{
+           text-decoration: none;
+           padding: 20px 20px ;
+           color: black;
+        }
+        .menu a:last-child{
+            background-color: brown;
+            color: white;
+            border-radius: 8px;
+        }
+       .he-text{
+        position: absolute;
+        top: 60 px;
+        left:  5px;
+        padding: 150px;
+       }
+       .he-text h2{
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: rgb(37, 36, 36);
+       }
+       .he-text h1{
+        font-size: 50px;
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 10px 10px ;
+       }
+       .he-text h1 span{
+        color: rgb(205, 25, 43);
+       }
+       .he-text h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 17px 10px 10px 10px;
+        letter-spacing: 2px;
+       }
+       #order{
+        text-decoration: none;
+        color: white;
+        background: rgb(14, 12, 12);
+        border-radius: 8px;
+        padding: 10px 10px  10px 10px;
+        top: 10px;
+       }
+       #offer{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(14, 12, 12);
+        border-radius: 8px;
+        padding: 10px 20px;
+       }
+       #image{
+        position: absolute;
+        padding: 350px;
+        }
+        #image img{
+            transition: 0.4s ease;
+        }
+        #image img:hover{
+         transform: translateY(-20px);
+        }
+        .l{
+            position: absolute;
+            bottom: -4px;
+        }
+    </style>
+    
+</body>
+</html>
